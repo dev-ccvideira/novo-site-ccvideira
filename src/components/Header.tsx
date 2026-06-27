@@ -106,6 +106,7 @@ const menuItems: MenuItem[] = [
 export function Header() {
   const [open, setOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const [activeMenu, setActiveMenu] = useState<string | null>(null);
   const pathname = usePathname();
   const isHome = pathname === "/";
   const transparent = isHome && !scrolled && !open;
@@ -140,7 +141,18 @@ export function Header() {
 
         <nav className="hidden items-center justify-end gap-0 lg:flex" aria-label="Menu principal">
           {menuItems.map((item) => (
-            <div key={item.href} className="group relative">
+            <div
+              key={item.href}
+              className="relative"
+              onMouseEnter={() => setActiveMenu(item.href)}
+              onMouseLeave={() => setActiveMenu(null)}
+              onFocus={() => setActiveMenu(item.href)}
+              onBlur={(event) => {
+                if (!event.currentTarget.contains(event.relatedTarget)) {
+                  setActiveMenu(null);
+                }
+              }}
+            >
               <Link
                 href={item.href}
                 className={cx(
@@ -153,12 +165,18 @@ export function Header() {
                 {item.children ? <span className="ml-1 text-[10px] opacity-70">▾</span> : null}
               </Link>
               {item.children ? (
-                <div className="invisible absolute left-0 top-full w-72 pt-2 text-stonewarm-900 opacity-0 transition duration-150 group-hover:visible group-hover:opacity-100 group-focus-within:visible group-focus-within:opacity-100">
+                <div
+                  className={cx(
+                    "absolute left-0 top-full w-72 pt-2 text-stonewarm-900 transition duration-150",
+                    activeMenu === item.href ? "visible opacity-100" : "invisible opacity-0"
+                  )}
+                >
                   <div className="grid gap-1 rounded-lg border border-vine-900/10 bg-white p-3 shadow-soft">
                     {item.children.map((child) => (
                       <Link
                         key={child.href}
                         href={child.href}
+                        onClick={() => setActiveMenu(null)}
                         className="group/item rounded-md px-3 py-2 transition hover:bg-vine-50"
                       >
                         <span className="block text-sm font-black text-vine-900">{child.label}</span>
