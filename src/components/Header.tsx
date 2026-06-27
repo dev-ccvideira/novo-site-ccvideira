@@ -153,8 +153,8 @@ export function Header() {
                 {item.children ? <span className="ml-1 text-[10px] opacity-70">▾</span> : null}
               </Link>
               {item.children ? (
-                <div className="invisible absolute left-0 top-full w-72 translate-y-3 rounded-lg border border-vine-900/10 bg-white p-3 text-stonewarm-900 opacity-0 shadow-soft transition duration-200 group-hover:visible group-hover:translate-y-1 group-hover:opacity-100">
-                  <div className="grid gap-1">
+                <div className="invisible absolute left-0 top-full w-72 pt-2 text-stonewarm-900 opacity-0 transition duration-150 group-hover:visible group-hover:opacity-100 group-focus-within:visible group-focus-within:opacity-100">
+                  <div className="grid gap-1 rounded-lg border border-vine-900/10 bg-white p-3 shadow-soft">
                     {item.children.map((child) => (
                       <Link
                         key={child.href}
