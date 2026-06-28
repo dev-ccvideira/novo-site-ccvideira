@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { ClickToPlayVideo } from "@/components/ClickToPlayVideo";
 
 export const metadata: Metadata = {
   title: "Nossa história",
@@ -19,7 +20,7 @@ const historySections = [
   {
     eyebrow: "Primeiros cultos",
     title: "A Palavra plantada em cada encontro.",
-    image: "/images/historia/costa-neto2012.png",
+    image: "/images/historia/palavra-2005.png",
     alt: "Pastor Costa Neto pregando em culto da CCVideira",
     reverse: true,
     text:
@@ -29,6 +30,7 @@ const historySections = [
     eyebrow: "Primeiros decididos",
     title: "Histórias transformadas pela graça de Deus.",
     image: "/images/historia/primeiro-convertido-ccvideira.png",
+    video: "/videos/juvencio.mp4",
     alt: "Juvêncio Sales, primeiro novo decidido da CCVideira",
     reverse: false,
     featured: true,
@@ -99,15 +101,25 @@ export default function HistoryPage() {
                 section.featured ? "lg:grid-cols-1" : "lg:grid-cols-2"
               }`}
             >
-              <img
-                src={section.image}
-                alt={section.alt}
-                className={`w-full bg-black ${
-                  section.featured
-                    ? "order-2 max-h-[520px] object-contain"
-                    : `h-full min-h-[360px] object-cover ${section.reverse ? "lg:order-2" : ""}`
-                }`}
-              />
+              {section.video ? (
+                <ClickToPlayVideo
+                  src={section.video}
+                  poster={section.image}
+                  title={section.alt}
+                  className="order-2"
+                  mediaClassName="max-h-[520px] object-contain"
+                />
+              ) : (
+                <img
+                  src={section.image}
+                  alt={section.alt}
+                  className={`w-full bg-black ${
+                    section.featured
+                      ? "order-2 max-h-[520px] object-contain"
+                      : `h-full min-h-[360px] object-cover ${section.reverse ? "lg:order-2" : ""}`
+                  }`}
+                />
+              )}
               <div className="flex flex-col justify-center p-7 sm:p-10">
                 <p className="text-xs font-black uppercase tracking-[0.24em] text-gold-500">{section.eyebrow}</p>
                 <h2 className="mt-4 text-3xl font-black tracking-tight text-vine-900 sm:text-5xl">{section.title}</h2>

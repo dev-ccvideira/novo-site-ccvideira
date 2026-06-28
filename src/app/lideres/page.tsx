@@ -133,6 +133,8 @@ export default async function LeadersPage() {
           pageContent.subheadline ||
           "Espaço preparado para apresentar os líderes de cada campus, suas histórias, responsabilidades pastorais e canais oficiais de contato."
         }
+        align="left"
+        contentClassName="flex min-h-[360px] flex-col justify-left py-28 sm:min-h-[440px] sm:py-36"
       />
 
       <section className="bg-stonewarm-50 py-16 sm:py-20">
@@ -142,11 +144,6 @@ export default async function LeadersPage() {
             <h2 className="mt-3 text-3xl font-black tracking-tight text-vine-900 sm:text-5xl">
               Liderança local, cuidado pessoal e visão compartilhada.
             </h2>
-            <p className="mt-5 text-base leading-8 text-stonewarm-700">
-              O primeiro card apresenta a liderança sênior. Os demais cards estão vinculados aos campus existentes.
-              Substitua os placeholders pela foto oficial, descrição pessoal e Instagram dos líderes quando esses dados
-              forem validados pela igreja.
-            </p>
           </div>
 
           <div className="mt-12 grid gap-8">

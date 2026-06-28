@@ -18,7 +18,9 @@ export default async function ContactPage() {
       <PageHero
         eyebrow="Contato"
         title="Estamos aqui para caminhar com você"
-        text="Envie uma mensagem, planeje sua visita ou fale com um campus. Os formulários podem salvar no CMS e enviar e-mail para a equipe."
+        text="Envie uma mensagem, planeje sua visita ou fale com um campus."
+        align="left"
+        contentClassName="flex min-h-[360px] flex-col justify-left py-28 sm:min-h-[440px] sm:py-36"
       />
       <section className="py-16">
         <div className="container-page grid gap-8 lg:grid-cols-[1fr_0.8fr]">
@@ -36,10 +38,6 @@ export default async function ContactPage() {
             <ul className="mt-5 grid gap-4 text-sm leading-6 text-stonewarm-700">
               <li>WhatsApp: {siteSettings.phone}</li>
               <li>E-mail: {siteSettings.email}</li>
-              <li>Endereço: [Inserir endereço principal]</li>
-              <li>Mapa: [Inserir mapa integrado]</li>
-              <li>Redes sociais: [Inserir links oficiais]</li>
-              <li>Atendimento: [Inserir horários]</li>
             </ul>
           </aside>
         </div>

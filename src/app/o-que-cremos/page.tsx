@@ -65,7 +65,7 @@ export default function WhatWeBelievePage() {
     <>
       <section className="relative isolate min-h-[720px] overflow-hidden bg-black text-white">
         <img
-          src="/images/o-que-cremos/louvor-videira.jpg"
+          src="/images/o-que-cremos/comunhao.png"
           alt="Culto de adoração na CCVideira"
           className="absolute inset-0 -z-20 h-full w-full object-cover"
         />
