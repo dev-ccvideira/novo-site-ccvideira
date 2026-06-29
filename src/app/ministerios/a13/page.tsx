@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { AnimatedSection } from "@/components/AnimatedSection";
@@ -60,8 +60,8 @@ export default function A13Page() {
 
         <div className="container-page relative z-10 grid min-h-[calc(100svh-112px)] items-center gap-12 py-20 lg:grid-cols-[0.92fr_1.08fr] lg:py-24">
           <AnimatedSection className="max-w-3xl">
-            <p className="text-xs font-black uppercase tracking-[0.38em] text-[#d9f944]">Ministério de jovens</p>
-            <div className="mt-8 max-w-[260px] rounded-[2rem] p-6 shadow-2xl shadow-black/40 sm:max-w-[340px]">
+            <p className="text-xs font-black tracking-[0.38em] text-[#d9f944]">Ministério de jovens</p>
+            <div className="mt-8 max-w-[220px] rounded-[2rem] p-5 shadow-2xl shadow-black/40 sm:max-w-[280px]">
               <Image
                 src="/images/ministerios/a13/a13.jpg"
                 alt="Logo do ministério A13"
@@ -71,7 +71,7 @@ export default function A13Page() {
                 className="h-auto w-full"
               />
             </div>
-            <h1 className="mt-8 max-w-4xl text-5xl font-black uppercase leading-[0.92] tracking-tight sm:text-7xl lg:text-8xl">
+            <h1 className="mt-8 max-w-4xl text-5xl font-black leading-[0.92] tracking-tight sm:text-7xl lg:text-8xl">
               Uma geração posicionada.
             </h1>
             <p className="mt-6 max-w-2xl text-lg leading-8 text-white/76 sm:text-xl">
@@ -81,13 +81,13 @@ export default function A13Page() {
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
               <Link
                 href="/contato"
-                className="focus-ring inline-flex min-h-12 items-center justify-center rounded-full bg-[#d9f944] px-7 text-sm font-black uppercase tracking-[0.08em] text-black transition hover:bg-white"
+                className="focus-ring inline-flex min-h-12 items-center justify-center rounded-full bg-[#d9f944] px-7 text-sm font-black tracking-[0.08em] text-black transition hover:bg-white"
               >
                 Quero me conectar
               </Link>
               <Link
                 href="#grupos"
-                className="focus-ring inline-flex min-h-12 items-center justify-center rounded-full border border-white/24 px-7 text-sm font-black uppercase tracking-[0.08em] text-white transition hover:bg-white hover:text-black"
+                className="focus-ring inline-flex min-h-12 items-center justify-center rounded-full border border-white/24 px-7 text-sm font-black tracking-[0.08em] text-white transition hover:bg-white hover:text-black"
               >
                 Conheça os grupos
               </Link>
@@ -114,7 +114,7 @@ export default function A13Page() {
                 className="object-cover"
               />
             </div>
-            <div className="absolute bottom-10 right-8 hidden rounded-full bg-red-600 px-6 py-3 text-sm font-black uppercase tracking-[0.18em] text-white shadow-xl shadow-red-950/50 sm:block">
+            <div className="absolute bottom-10 right-8 hidden rounded-full bg-red-600 px-6 py-3 text-sm font-black tracking-[0.18em] text-white shadow-xl shadow-red-950/50 sm:block">
               This is A13
             </div>
           </AnimatedSection>
@@ -123,7 +123,7 @@ export default function A13Page() {
 
       <AnimatedSection className="border-y border-white/10 bg-[#d9f944] py-8 text-black">
         <div className="container-page">
-          <p className="text-center text-xl font-black uppercase tracking-tight sm:text-3xl md:text-5xl">
+          <p className="text-center text-xl font-black tracking-tight sm:text-3xl md:text-5xl">
             Eu sou o A13. Chamados para anunciar a luz.
           </p>
         </div>
@@ -132,8 +132,8 @@ export default function A13Page() {
       <section className="bg-black py-20 sm:py-24">
         <div className="container-page grid gap-12 lg:grid-cols-[0.82fr_1.18fr] lg:items-center">
           <AnimatedSection>
-            <p className="text-xs font-black uppercase tracking-[0.3em] text-red-500">Nossa declaração</p>
-            <h2 className="mt-4 text-4xl font-black uppercase tracking-tight sm:text-6xl">
+            <p className="text-xs font-black tracking-[0.3em] text-red-500">Nossa declaração</p>
+            <h2 className="mt-4 text-4xl font-black tracking-tight sm:text-6xl">
               Existe um chamado para esta geração.
             </h2>
           </AnimatedSection>
@@ -151,7 +151,7 @@ export default function A13Page() {
             <p className="rounded-3xl border border-white/10 bg-white/[0.06] p-6 text-white">
               "Geração eleita, sacerdócio real, nação santa, povo exclusivo de Deus, para anunciar
               as grandezas daquele que nos chamou das trevas para a sua maravilhosa luz."
-              <span className="mt-3 block text-sm font-bold uppercase tracking-[0.2em] text-[#d9f944]">
+              <span className="mt-3 block text-sm font-bold tracking-[0.2em] text-[#d9f944]">
                 1 Pedro 2:9
               </span>
             </p>
@@ -162,8 +162,8 @@ export default function A13Page() {
       <section className="bg-white py-20 text-black sm:py-24">
         <div className="container-page">
           <AnimatedSection className="mx-auto max-w-3xl text-center">
-            <p className="text-xs font-black uppercase tracking-[0.3em] text-red-600">Jornada A13</p>
-            <h2 className="mt-4 text-4xl font-black uppercase tracking-tight sm:text-6xl">
+            <p className="text-xs font-black tracking-[0.3em] text-red-600">Jornada A13</p>
+            <h2 className="mt-4 text-4xl font-black tracking-tight sm:text-6xl">
               Crescer em Cristo, juntos.
             </h2>
             <p className="mt-5 text-lg leading-8 text-black/65">
@@ -180,7 +180,7 @@ export default function A13Page() {
                 className="rounded-[2rem] border border-black/10 bg-black p-7 text-white shadow-sm"
               >
                 <span className="text-sm font-black text-[#d9f944]">0{index + 1}</span>
-                <h3 className="mt-8 text-2xl font-black uppercase tracking-tight">{step}</h3>
+                <h3 className="mt-8 text-2xl font-black tracking-tight">{step}</h3>
               </AnimatedSection>
             ))}
           </div>
@@ -190,8 +190,8 @@ export default function A13Page() {
       <section id="grupos" className="bg-[#101010] py-20 sm:py-24">
         <div className="container-page">
           <AnimatedSection className="max-w-3xl">
-            <p className="text-xs font-black uppercase tracking-[0.3em] text-[#d9f944]">Grupos</p>
-            <h2 className="mt-4 text-4xl font-black uppercase tracking-tight sm:text-6xl">
+            <p className="text-xs font-black tracking-[0.3em] text-[#d9f944]">Grupos</p>
+            <h2 className="mt-4 text-4xl font-black tracking-tight sm:text-6xl">
               Um lugar para cada fase.
             </h2>
           </AnimatedSection>
@@ -203,8 +203,8 @@ export default function A13Page() {
                 delay={index * 90}
                 className="group rounded-[2rem] border border-white/10 bg-white/[0.06] p-8 transition hover:-translate-y-1 hover:bg-white hover:text-black"
               >
-                <p className="text-sm font-black uppercase tracking-[0.22em] text-red-500">{group.age}</p>
-                <h3 className="mt-5 text-4xl font-black uppercase tracking-tight">{group.name}</h3>
+                <p className="text-sm font-black tracking-[0.22em] text-red-500">{group.age}</p>
+                <h3 className="mt-5 text-4xl font-black tracking-tight">{group.name}</h3>
                 <p className="mt-5 text-base leading-7 text-white/68 transition group-hover:text-black/65">
                   {group.description}
                 </p>
@@ -218,8 +218,8 @@ export default function A13Page() {
         <div className="container-page">
           <AnimatedSection className="flex flex-col gap-5 md:flex-row md:items-end md:justify-between">
             <div className="max-w-3xl">
-              <p className="text-xs font-black uppercase tracking-[0.3em] text-red-500">Atmosfera</p>
-              <h2 className="mt-4 text-4xl font-black uppercase tracking-tight sm:text-6xl">
+              <p className="text-xs font-black tracking-[0.3em] text-red-500">Atmosfera</p>
+              <h2 className="mt-4 text-4xl font-black tracking-tight sm:text-6xl">
                 Fé, amizade e movimento.
               </h2>
             </div>
@@ -255,8 +255,8 @@ export default function A13Page() {
       <section className="bg-[#d9f944] py-16 text-black sm:py-20">
         <AnimatedSection className="container-page flex flex-col gap-8 md:flex-row md:items-center md:justify-between">
           <div className="max-w-3xl">
-            <p className="text-xs font-black uppercase tracking-[0.3em] text-black/60">Próximo passo</p>
-            <h2 className="mt-3 text-4xl font-black uppercase tracking-tight sm:text-6xl">
+            <p className="text-xs font-black tracking-[0.3em] text-black/60">Próximo passo</p>
+            <h2 className="mt-3 text-4xl font-black tracking-tight sm:text-6xl">
               Quer fazer parte do A13?
             </h2>
             <p className="mt-4 text-lg leading-8 text-black/68">
@@ -265,7 +265,7 @@ export default function A13Page() {
           </div>
           <Link
             href="/contato"
-            className="focus-ring inline-flex min-h-12 shrink-0 items-center justify-center rounded-full bg-black px-8 text-sm font-black uppercase tracking-[0.1em] text-white transition hover:bg-red-600"
+            className="focus-ring inline-flex min-h-12 shrink-0 items-center justify-center rounded-full bg-black px-8 text-sm font-black tracking-[0.1em] text-white transition hover:bg-red-600"
           >
             Falar com a equipe
           </Link>

@@ -68,7 +68,7 @@ export default function InspirePage() {
 
         <div className="container-page relative z-10 grid min-h-[calc(100svh-112px)] items-center gap-12 py-20 lg:grid-cols-[0.96fr_1.04fr] lg:py-24">
           <AnimatedSection className="max-w-3xl">
-            <p className="text-xs font-black uppercase tracking-[0.38em] text-[#cfff4f]">Ministério de adultos solteiros</p>
+            <p className="text-xs font-black tracking-[0.38em] text-[#cfff4f]">Ministério de adultos solteiros</p>
             <div className="mt-8 inline-flex rounded-[2rem] border border-white/10 bg-black/70 p-6 shadow-2xl shadow-black/40 backdrop-blur">
               <Image
                 src="/images/ministerios/inspire/inspire-logo.png"
@@ -79,7 +79,7 @@ export default function InspirePage() {
                 className="h-24 w-24 object-contain sm:h-32 sm:w-32"
               />
             </div>
-            <h1 className="mt-8 max-w-4xl text-5xl font-black uppercase leading-[0.9] tracking-tight sm:text-7xl lg:text-8xl">
+            <h1 className="mt-8 max-w-4xl text-5xl font-black leading-[0.9] tracking-tight sm:text-7xl lg:text-8xl">
               Seu lugar também é aqui.
             </h1>
             <p className="mt-6 max-w-2xl text-lg leading-8 text-white/78 sm:text-xl">
@@ -89,13 +89,13 @@ export default function InspirePage() {
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
               <Link
                 href="/contato"
-                className="focus-ring inline-flex min-h-12 items-center justify-center rounded-full bg-[#cfff4f] px-7 text-sm font-black uppercase tracking-[0.08em] text-black transition hover:bg-white"
+                className="focus-ring inline-flex min-h-12 items-center justify-center rounded-full bg-[#cfff4f] px-7 text-sm font-black tracking-[0.08em] text-black transition hover:bg-white"
               >
                 Quero participar
               </Link>
               <Link
                 href="#grupos"
-                className="focus-ring inline-flex min-h-12 items-center justify-center rounded-full border border-white/24 px-7 text-sm font-black uppercase tracking-[0.08em] text-white transition hover:bg-white hover:text-black"
+                className="focus-ring inline-flex min-h-12 items-center justify-center rounded-full border border-white/24 px-7 text-sm font-black tracking-[0.08em] text-white transition hover:bg-white hover:text-black"
               >
                 Conheça os grupos
               </Link>
@@ -115,15 +115,12 @@ export default function InspirePage() {
             </div>
             <div className="absolute bottom-0 left-0 h-[58%] w-[58%] overflow-hidden rounded-[2rem] border border-white/10 shadow-2xl shadow-black/50">
               <Image
-                src="/images/ministerios/inspire/inspire-adoracao.jpg"
+                src="/images/ministerios/inspire/inspire-pessoas.jpg"
                 alt="Noite de adoração do Inspire"
                 fill
                 sizes="(min-width: 1024px) 28vw, 70vw"
                 className="object-cover"
               />
-            </div>
-            <div className="absolute bottom-12 right-6 hidden rounded-full bg-[#ff805a] px-6 py-3 text-sm font-black uppercase tracking-[0.18em] text-black shadow-xl shadow-black/40 sm:block">
-              Inspire
             </div>
           </AnimatedSection>
         </div>
@@ -131,7 +128,7 @@ export default function InspirePage() {
 
       <AnimatedSection className="border-y border-white/10 bg-[#cfff4f] py-10 text-black">
         <div className="container-page">
-          <p className="text-center text-xl font-black uppercase tracking-tight sm:text-3xl md:text-5xl">
+          <p className="text-center text-xl font-black tracking-tight sm:text-3xl md:text-5xl">
             Comunidade para viver fé, amizade e propósito.
           </p>
         </div>
@@ -140,8 +137,8 @@ export default function InspirePage() {
       <section className="bg-white py-20 text-black sm:py-24">
         <div className="container-page grid gap-12 lg:grid-cols-[0.82fr_1.18fr] lg:items-center">
           <AnimatedSection>
-            <p className="text-xs font-black uppercase tracking-[0.3em] text-[#ff805a]">Nossa missão</p>
-            <h2 className="mt-4 text-4xl font-black uppercase tracking-tight sm:text-6xl">
+            <p className="text-xs font-black tracking-[0.3em] text-[#ff805a]">Nossa missão</p>
+            <h2 className="mt-4 text-4xl font-black tracking-tight sm:text-6xl">
               Ninguém precisa caminhar sozinho.
             </h2>
           </AnimatedSection>
@@ -162,8 +159,8 @@ export default function InspirePage() {
       <section id="grupos" className="bg-[#101010] py-20 sm:py-24">
         <div className="container-page">
           <AnimatedSection className="max-w-3xl">
-            <p className="text-xs font-black uppercase tracking-[0.3em] text-[#cfff4f]">Divisões</p>
-            <h2 className="mt-4 text-4xl font-black uppercase tracking-tight sm:text-6xl">
+            <p className="text-xs font-black tracking-[0.3em] text-[#cfff4f]">Divisões</p>
+            <h2 className="mt-4 text-4xl font-black tracking-tight sm:text-6xl">
               Dois ambientes, uma mesma casa.
             </h2>
           </AnimatedSection>
@@ -175,8 +172,8 @@ export default function InspirePage() {
                 delay={index * 100}
                 className="group rounded-[2rem] border border-white/10 bg-white/[0.06] p-8 transition hover:-translate-y-1 hover:bg-white hover:text-black"
               >
-                <p className="text-sm font-black uppercase tracking-[0.22em] text-[#ff805a]">{group.age}</p>
-                <h3 className="mt-5 text-4xl font-black uppercase tracking-tight sm:text-5xl">{group.name}</h3>
+                <p className="text-sm font-black tracking-[0.22em] text-[#ff805a]">{group.age}</p>
+                <h3 className="mt-5 text-4xl font-black tracking-tight sm:text-5xl">{group.name}</h3>
                 <p className="mt-5 text-base leading-7 text-white/68 transition group-hover:text-black/65">
                   {group.description}
                 </p>
@@ -198,15 +195,15 @@ export default function InspirePage() {
             />
           </AnimatedSection>
           <AnimatedSection delay={100} direction="left">
-            <p className="text-xs font-black uppercase tracking-[0.3em] text-[#cfff4f]">Por que existimos</p>
-            <h2 className="mt-4 text-4xl font-black uppercase tracking-tight sm:text-6xl">
+            <p className="text-xs font-black tracking-[0.3em] text-[#cfff4f]">Por que existimos</p>
+            <h2 className="mt-4 text-4xl font-black tracking-tight sm:text-6xl">
               Abra espaço para o novo de Deus.
             </h2>
             <div className="mt-8 grid gap-4">
               {pillars.map((pillar, index) => (
                 <div key={pillar} className="rounded-2xl border border-white/10 bg-white/[0.06] p-5">
                   <span className="text-sm font-black text-[#ff805a]">0{index + 1}</span>
-                  <h3 className="mt-3 text-2xl font-black uppercase tracking-tight">{pillar}</h3>
+                  <h3 className="mt-3 text-2xl font-black tracking-tight">{pillar}</h3>
                 </div>
               ))}
             </div>
@@ -218,8 +215,8 @@ export default function InspirePage() {
         <div className="container-page">
           <AnimatedSection className="flex flex-col gap-5 md:flex-row md:items-end md:justify-between">
             <div className="max-w-3xl">
-              <p className="text-xs font-black uppercase tracking-[0.3em] text-[#ff805a]">Atmosfera</p>
-              <h2 className="mt-4 text-4xl font-black uppercase tracking-tight sm:text-6xl">
+              <p className="text-xs font-black tracking-[0.3em] text-[#ff805a]">Atmosfera</p>
+              <h2 className="mt-4 text-4xl font-black tracking-tight sm:text-6xl">
                 Encontros que viram comunidade.
               </h2>
             </div>
@@ -255,8 +252,8 @@ export default function InspirePage() {
       <section className="bg-[#101010] py-20 sm:py-24">
         <div className="container-page grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:items-center">
           <AnimatedSection>
-            <p className="text-xs font-black uppercase tracking-[0.3em] text-[#cfff4f]">Acompanhe</p>
-            <h2 className="mt-4 text-4xl font-black uppercase tracking-tight sm:text-6xl">
+            <p className="text-xs font-black tracking-[0.3em] text-[#cfff4f]">Acompanhe</p>
+            <h2 className="mt-4 text-4xl font-black tracking-tight sm:text-6xl">
               Encontre o Inspire perto de você.
             </h2>
             <p className="mt-5 max-w-xl text-lg leading-8 text-white/68">
@@ -270,7 +267,7 @@ export default function InspirePage() {
                 href={link.href}
                 target="_blank"
                 rel="noreferrer"
-                className="focus-ring flex items-center justify-between rounded-2xl border border-white/10 bg-white/[0.06] px-6 py-5 text-lg font-black uppercase tracking-tight transition hover:bg-[#cfff4f] hover:text-black"
+                className="focus-ring flex items-center justify-between rounded-2xl border border-white/10 bg-white/[0.06] px-6 py-5 text-lg font-black tracking-tight transition hover:bg-[#cfff4f] hover:text-black"
               >
                 {link.label}
                 <span aria-hidden="true">↗</span>
@@ -281,18 +278,10 @@ export default function InspirePage() {
       </section>
 
       <section className="relative isolate overflow-hidden bg-black py-20 sm:py-24">
-        <Image
-          src="/images/ministerios/inspire/seu-lugar-videira.png"
-          alt="Seu lugar é aqui"
-          fill
-          sizes="100vw"
-          className="object-cover opacity-20"
-        />
-        <div className="absolute inset-0 bg-black/68" />
         <AnimatedSection className="container-page relative z-10 flex flex-col gap-8 md:flex-row md:items-center md:justify-between">
           <div className="max-w-3xl">
-            <p className="text-xs font-black uppercase tracking-[0.3em] text-[#cfff4f]">Próximo passo</p>
-            <h2 className="mt-3 text-4xl font-black uppercase tracking-tight sm:text-6xl">
+            <p className="text-xs font-black tracking-[0.3em] text-[#cfff4f]">Próximo passo</p>
+            <h2 className="mt-3 text-4xl font-black tracking-tight sm:text-6xl">
               Venha para o próximo encontro.
             </h2>
             <p className="mt-4 text-lg leading-8 text-white/70">
@@ -301,7 +290,7 @@ export default function InspirePage() {
           </div>
           <Link
             href="/contato"
-            className="focus-ring inline-flex min-h-12 shrink-0 items-center justify-center rounded-full bg-[#cfff4f] px-8 text-sm font-black uppercase tracking-[0.1em] text-black transition hover:bg-white"
+            className="focus-ring inline-flex min-h-12 shrink-0 items-center justify-center rounded-full bg-[#cfff4f] px-8 text-sm font-black tracking-[0.1em] text-black transition hover:bg-white"
           >
             Falar com a equipe
           </Link>
@@ -310,4 +299,7 @@ export default function InspirePage() {
     </div>
   );
 }
+
+
+
 
