@@ -52,7 +52,7 @@ export default function VideiraKidsPage() {
             <p className="mt-8 text-xs font-black uppercase tracking-[0.28em] text-gold-300">Ministério infantil</p>
             <h1 className="mt-5 max-w-4xl text-5xl font-black tracking-tight sm:text-7xl">Videira Kids</h1>
             <p className="mt-7 max-w-2xl text-lg leading-8 text-white/80">
-              Um ambiente alegre, seguro e cheio de propósito para crianças conhecerem Jesus, criarem vínculos e
+              Viver, amar, servir, e se divertir! Um ambiente alegre, seguro e cheio de propósito para crianças conhecerem Jesus, criarem vínculos e
               descobrirem que a igreja também é a casa delas.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
@@ -188,7 +188,7 @@ export default function VideiraKidsPage() {
         <div className="container-page rounded-lg bg-black p-8 text-center text-white shadow-soft sm:p-12">
           <p className="text-xs font-black uppercase tracking-[0.24em] text-gold-300">Famílias</p>
           <h2 className="mx-auto mt-4 max-w-3xl text-4xl font-black tracking-tight sm:text-5xl">
-            Quer trazer sua criança ao Videira Kids?
+            Traga sua criança para o Videira Kids!
           </h2>
           <p className="mx-auto mt-5 max-w-2xl text-base leading-8 text-white/72">
             Encontre um campus, confirme a programação infantil local e venha viver esse momento com a gente.
